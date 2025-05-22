@@ -2,8 +2,12 @@
 首先先從Pacbio smart links抓取下機檔案(.fastq.gz)
 
 參考Pacbio官方的github進行安裝`https://github.com/PacificBiosciences/pb-metagenomics-tools`
+利用git clone將pb-metagenomic-tool提取到伺服器中
 
-以Python3.12.5建立環境(這邊使用Mamba解決Conda solving environment過久的問題)
-```shell
- mamba create -n pacbio_new312 python=3.12.5
-```
+安裝相關的dependence
+
+* Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+  Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi, 
+  viverra nec, fringilla in, laoreet vitae, risus.
+
+* teteatdviverra nec, fringilla in, laoreet vitae, risus.viverra nec, fringilla in,   laoreet vitae, risus.
