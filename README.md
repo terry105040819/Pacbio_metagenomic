@@ -13,15 +13,28 @@
 
 
 
-* HiFi-MAG-Pipeline
-  運行pipeline前須先將HiFi reads進行Assemble，官方推薦metaFlye和hifiasm進行組裝
+### HiFi-MAG-Pipeline
+---
+運行pipeline前須先將HiFi reads進行Assemble，官方推薦metaFlye和hifiasm進行組裝
 
-
+Hifiasm
+---
+```sh
+ hifiasm -o prefix.asm -t thread_count input.fa
+```
+```sh
+awk'/^S/{print ">"$2;print $3}' hifiasm.gfa  > hifiasm.fa
+```
   Flye
-  ```shell
+  ---
+  ```sh
   flye --pacbio-hifi ~/input.fastq --meta --out-dir ~/output-dir
-  ``
+  ```
+* 本流程主要使用Flye並設定--meta參數
+
+
+### Taxonomy-Profiling-Sourmash(Assembly free)
+---
 
 
 
-* Taxonomy-Profiling-Sourmash(Assembly free)
